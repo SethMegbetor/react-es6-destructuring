@@ -32,8 +32,6 @@ import cars from "./practice";
 
 const [honda, tesla] = cars;
 
-// console.log(honda);
-
 const {
   coloursByPopularity: hondaColour,
   speedStats: { topSpeed: hondaTopSpeed },
@@ -41,19 +39,11 @@ const {
 const hondaTopColour = hondaColour[0];
 console.log(hondaTopColour);
 
-const {
+const { 
   coloursByPopularity: teslaColour,
   speedStats: { topSpeed: teslaTopSpeed },
 } = tesla;
 const teslaTopColour = teslaColour;
-// // const [teslaTopSpeed, teslaTopColour] = speedStats;
-// console.log(topSpeed);
-// let hondaTopSpeed = topSpeed;
-// console.log(hondaTopSpeed);
-
-// console.log(tesla);
-// console.log(tesla.speedStats);
-// let teslaTopSpeed = tesla.speedStats;
 
 ReactDOM.render(
   <table>
