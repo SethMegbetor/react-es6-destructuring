@@ -1,6 +1,23 @@
 const animals = [
-  { name: "cat", sound: "meow" },
-  { name: "dog", sound: "woof" }
+  {
+    name: "cat",
+    sound: "meow",
+    feedingRequirements: {
+      food: 2,
+      water: 4,
+    },
+  },
+  { name: "dog", sound: "woof" },
 ];
 
-export default animals
+function useAnimals(animal) {
+  return [
+    animal.name,
+    function () {
+      console.log(animal.sound);
+    },
+  ];
+}
+
+export default animals;
+export { useAnimals };
